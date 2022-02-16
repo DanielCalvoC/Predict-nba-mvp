@@ -3,7 +3,7 @@ I am trying to predict who is going to be the MVP in a given NBA season. For thi
 
 Usage
 --------
-Jupiter Notebook 
+Jupiter Notebook Predict-NBA-MVP-Web-scraping-and-ML-project.ipynb
 
 Description
 --------
