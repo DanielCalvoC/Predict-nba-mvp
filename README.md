@@ -1,65 +1,19 @@
 # Predict NBA MVP : Web scraping and ML project
 I am trying to predict who is going to be the MVP in a given NBA season. For this, I'll use NBA data on www.basketball-reference.com. This project has 3 big parts: web scrapping, data cleaning and machine learning
 
+![This is an image](https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2021-08/michael-jordan_yzt70lkmipqq19lqklwtwpeu3.png?itok=pustlDga)
+
 Usage
 --------
-Jupiter Notebook Predict-NBA-MVP-Web-scraping-and-ML-project.ipynb
+Jupiter Notebook  Predict-NBA-MVP-Web-scraping-and-ML-project.ipynb
 
 Description
 --------
-WEB SCRAPING:
+Web scraping: I'll download the NBA data I need.  To do the scraping, I'll use python, with the selenium, beautifulsoup, pandas, and requests libraries.  I'll download the files using requests and selenium, then parse them with beautifulsoup and load them into pandas DataFrames. By the end, I'll have csv files that we can then merge and use to make predictions.
 
-Download MVP votes with requests
+Data cleaning. I'll combine our mvp, player, and team stats data using pandas.  Along the way, I'll work through a lot of data cleaning, including using merge, map, fillna, and replace.  I'll also use matplotlib to explore the data. By the end, I'll have a clean DataFrame that I can use for machine learning.
 
-Parsing the votes table with BeautifulSoup. Extract the data from each html
-
-Combining MVP votes with Pandas --> mvps.csv
-
-Download player stats
-
-Using Selenium to scrape a Javascript page
-
-Parsing the stats with Beautifulsoup
-
-Combining player stats with Pandas --> players.csv
-
-Downloading team data
-
-Parsing the team data with Beautifulsoup
-
-Combining team stats with Pandas --> teams.csv
-
-
-DATA CLEANING:
-
-Cleaning player data
-
-Combining the player and mvp data --> combined dataframe
-
-Cleaning the team data
-
-Combined data frame and teams df
-
-Exploring data and looking for correlations
-
-
-MACHINE LEARNING:
-
-Prepare data
-
-Training ML model: Ridge regression
-
-Identifyng an error metric -- evaluate if this algorithm do a good job
-
-Implementing backtesting to predict each year
-
-Diagnosing model performance
-
-Adding more predictors
-
-Using a random forest
-
-
+Machine learning to predict who will win MVP each year.  I'll first prepare the data for machine learning and use a Ridge Regression model.  I'll then define an error metric, backtest across most of the data set, and iterate on our predictors.  I'll end by using a Random Forest model to make predictions.
 
 
 Used tech
